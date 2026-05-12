@@ -10,7 +10,7 @@ const slides = [
     title: "STRATEGIC CONNECTIVITY",
     content:
       "Reliance MET City is strategically located in the heart of Delhi NCR, adjoining Gurgaon and Delhi, offering unmatched multimodal connectivity. With direct access to NH-8, the KMP Expressway, and the upcoming Dwarka Expressway, it enables seamless movement across North India. The nearby Farukh Nagar Railway Station, Private Freight Terminal (PFT), and proximity to IGI Airport make MET City a vital link in the Dedicated Freight Corridor (DFC) and Delhi-Mumbai Industrial Corridor (DMIC), ideal for investors seeking industrial plots in Haryana.",
-    image: "/strategic-connectivity.jpg",
+    image: "/strategic-connetivity.jpg",
   },
   {
     title: "SOCIO-ECONOMIC LANDSCAPE",

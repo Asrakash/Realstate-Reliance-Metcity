@@ -53,10 +53,15 @@ export function WhyInvest() {
           className="max-w-3xl mx-auto space-y-4 mb-12"
         >
           {reasons.map((reason, index) => (
-            <div key={index} className="flex items-start gap-3">
+            <motion.div
+              key={index}
+              whileHover={{ y: -4 }}
+              transition={{ duration: 0.25, ease: "easeOut" }}
+              className="flex items-start gap-3 rounded-xl border border-white/10 bg-white/5 p-5"
+            >
               <Check className="w-5 h-5 text-[#c9a962] flex-shrink-0 mt-0.5" />
               <p className="text-gray-300 text-sm">{reason}</p>
-            </div>
+            </motion.div>
           ))}
         </motion.div>
 
