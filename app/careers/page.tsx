@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 import { Briefcase, Users, Zap, Award, Globe, Heart } from "lucide-react"
 
 const values = [
-  { icon: Award, title: "Excellencee", description: "We pursue world-class standards in everything we do" },
+  { icon: Award, title: "Excellenceee", description: "We pursue world-class standards in everything we do" },
   { icon: Globe, title: "Global Vision", description: "We think beyond borders and build for the world" },
   { icon: Heart, title: "Sustainability", description: "We prioritize environmental and social responsibility" },
   { icon: Users, title: "Community", description: "We build inclusive ecosystems for growth" },
