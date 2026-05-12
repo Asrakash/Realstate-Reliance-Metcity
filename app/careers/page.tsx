@@ -11,7 +11,7 @@ const values = [
   { icon: Heart, title: "Sustainability", description: "We prioritize environmental and social responsibility" },
   { icon: Users, title: "Community", description: "We build inclusive ecosystems for growth" },
   { icon: Zap, title: "Innovation", description: "We embrace technology and creative problem-solving" },
-  { icon: Briefcase, title: "Integrity", description: "We operate with transparency and honesty" },
+  { icon: Briefcase, title: "Integrity", description: "We operate with transparency,kindness and honesty" },
 ]
 
 const departments = [
