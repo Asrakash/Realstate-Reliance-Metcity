@@ -10,25 +10,25 @@ const slides = [
     title: "STRATEGIC CONNECTIVITY",
     content:
       "Reliance MET City is strategically located in the heart of Delhi NCR, adjoining Gurgaon and Delhi, offering unmatched multimodal connectivity. With direct access to NH-8, the KMP Expressway, and the upcoming Dwarka Expressway, it enables seamless movement across North India. The nearby Farukh Nagar Railway Station, Private Freight Terminal (PFT), and proximity to IGI Airport make MET City a vital link in the Dedicated Freight Corridor (DFC) and Delhi-Mumbai Industrial Corridor (DMIC), ideal for investors seeking industrial plots in Haryana.",
-    image: "https://images.unsplash.com/photo-1545558014-8692077e9b5c?q=80&w=2940&auto=format&fit=crop",
+    image: "/strategic-connectivity.jpg",
   },
   {
     title: "SOCIO-ECONOMIC LANDSCAPE",
     content:
       "Spanning 22 villages and a population of over 40,000, MET City embraces inclusive growth by empowering local communities through skill training, job creation, and sustainable development. The region is evolving from an agrarian base into a vibrant industrial ecosystem, with rising employment in FMCG, automotive, electronics, and garment sectors. Surrounded by neighbouring industrial parks, it draws from a large pool of skilled manpower, ideal for industries seeking a smart city in Haryana that combines opportunity with community development.",
-    image: "https://images.unsplash.com/photo-1486325212027-8081e485255e?q=80&w=2940&auto=format&fit=crop",
+    image: "/socio-economic-landscape.jpg",
   },
   {
     title: "FUTURE-READY INFRASTRUCTURE",
     content:
       "From SCADA-controlled water supply and smart meters to 220/33/11 kV substations and dual-grid power systems, MET City ensures 24x7 operational readiness. Its infrastructure is tailored for energy-intensive industries, smart homes, and sustainable living. Advanced rainwater harvesting, STPs, and CETPs support its mission to be among the most sustainably planned smart cities in India.",
-    image: "https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&w=2940&auto=format&fit=crop",
+    image: "/future-ready-infrastructure.jpg",
   },
   {
     title: "COMPETITIVE BLEND",
     content:
       "MET City offers a unique mix of industrial, commercial, and residential plots for sale within a world-class smart township. Whether you're investing in freehold industrial land, building a commercial property in Gurgaon, or seeking residential plots near Delhi, MET City provides a holistic environment. With healthcare, education, retail, and a thriving Japanese Industrial Township (JIT), it's more than a city, it's a growth engine.",
-    image: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2940&auto=format&fit=crop",
+    image: "/competitive-blend.jpg",
   },
 ]
 
