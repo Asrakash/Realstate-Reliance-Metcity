@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from 'next'
 import { Inter, Geist_Mono } from 'next/font/google'
 
 import './globals.css'
+import { ReraBadge } from '@/components/rera-badge'
 
 const inter = Inter({ 
   subsets: ["latin"],
@@ -62,11 +63,7 @@ export default function RootLayout({
     <html lang="en" data-scroll-behavior="smooth" className="bg-black">
       <body suppressHydrationWarning className={`${inter.variable} ${geistMono.variable} font-sans antialiased bg-black text-white`}>
         {children}
-        <div className="fixed bottom-6 right-6 z-50 pointer-events-none">
-          <div className="w-14 h-14 rounded-full bg-black border-2 border-white flex items-center justify-center">
-            <span className="text-white text-xs font-bold">RERA</span>
-          </div>
-        </div>
+        <ReraBadge />
       </body>
     </html>
   )
