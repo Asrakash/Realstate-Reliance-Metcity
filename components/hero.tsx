@@ -72,18 +72,7 @@ export function Hero() {
             </motion.div>
           </AnimatePresence>
 
-          {/* Play Video Button */}
-          <motion.button
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.5 }}
-            className="mt-10 flex items-center gap-3 px-6 py-3 bg-transparent border border-white/30 text-white text-sm tracking-wider hover:bg-white/10 transition-all group"
-          >
-            PLAY VIDEO
-            <div className="w-8 h-8 rounded-full border border-white/50 flex items-center justify-center group-hover:bg-white/20 transition-all">
-              <Play className="w-3 h-3 fill-white" />
-            </div>
-          </motion.button>
+          
         </div>
       </div>
 
@@ -103,12 +92,6 @@ export function Hero() {
         ))}
       </div>
 
-      {/* RERA Badge */}
-      <div className="absolute bottom-6 right-6 z-20">
-        <div className="w-14 h-14 rounded-full bg-black border-2 border-white flex items-center justify-center">
-          <span className="text-white text-xs font-bold">RERA</span>
-        </div>
-      </div>
     </section>
   )
 }
