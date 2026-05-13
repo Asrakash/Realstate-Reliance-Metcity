@@ -5,9 +5,9 @@ import { ArrowRight } from "lucide-react"
 import Link from "next/link"
 
 const videos = [
-  { id: "dQw4w9WgXcQ", title: "MET City | India's Integrated Smart City in Delhi NCR" },
-  { id: "dQw4w9WgXcQ", title: "Reliance MET City: A Vision of Progress" },
-  { id: "dQw4w9WgXcQ", title: "Building the Future | Reliance MET City Construction Update" },
+  { id: "lxNiFqm2n54", title: "MET City | India's Integrated Smart City in Delhi NCR" },
+  { id: "bzO5ii8X-1g", title: "Reliance MET City: A Vision of Progress" },
+  { id: "c30huc78aOg", title: "Building the Future | Reliance MET City Construction Update" },
 ]
 
 export function SocialMedia() {
