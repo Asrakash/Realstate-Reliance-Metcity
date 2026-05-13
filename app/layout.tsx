@@ -25,37 +25,22 @@ export const metadata: Metadata = {
     siteName: 'MET City',
     title: 'MET City | A Vision. A City. A New Tomorrow.',
     description: 'Shaping the future of urban India through a world-class smart city with sustainable infrastructure and unparalleled investment opportunities.',
-    images: [
-      {
-        url: '/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'MET City Smart Township',
-      },
-    ],
+    images: '/og-image.jpg',
   },
   twitter: {
     card: 'summary_large_image',
     title: 'MET City | India\'s Premier Smart Industrial Township',
     description: 'Discover world-class investment opportunities in India\'s most ambitious smart township project.',
-    images: ['/og-image.jpg'],
+    images: '/og-image.jpg',
   },
   icons: {
     icon: [
       {
-        url: '/icon-light-32x32.png',
-        media: '(prefers-color-scheme: light)',
-      },
-      {
-        url: '/icon-dark-32x32.png',
-        media: '(prefers-color-scheme: dark)',
-      },
-      {
-        url: '/icon.svg',
-        type: 'image/svg+xml',
+        url: '/Metcitylogo1.png',
+        type: 'image/png',
       },
     ],
-    apple: '/apple-icon.png',
+    apple: '/Metcitylogo1.png',
   },
 }
 
@@ -75,7 +60,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="bg-black">
-      <body className={`${inter.variable} ${geistMono.variable} font-sans antialiased bg-black text-white`}>
+      <body suppressHydrationWarning className={`${inter.variable} ${geistMono.variable} font-sans antialiased bg-black text-white`}>
         {children}
       </body>
     </html>

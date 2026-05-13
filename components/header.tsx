@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react"
 import Link from "next/link"
 import { motion, AnimatePresence } from "framer-motion"
-import { ChevronDown, Menu, X } from "lucide-react"
+import { ChevronDown, Headphones, Menu, X } from "lucide-react"
 
 const navItems = [
   {
@@ -143,14 +143,9 @@ export function Header() {
           </div>
 
           {/* Right side */}
-          <div className="hidden lg:flex items-center gap-4">
-            <button className="p-2 text-white hover:text-[#c9a962] transition-colors" aria-label="Accessibility">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
-                <circle cx="12" cy="4" r="2" />
-                <path d="M12 8v8" />
-                <path d="M8 12h8" />
-                <path d="M9 20l3-4 3 4" />
-              </svg>
+          <div className="hidden lg:flex items-center gap-3">
+            <button className="p-2 text-white hover:text-[#c9a962] transition-colors" aria-label="Customer support">
+              <Headphones className="w-5 h-5" />
             </button>
             <Link
               href="/contact"

@@ -1,14 +1,26 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ArrowRight, Check } from "lucide-react"
+import { ArrowRight, Award, Home, MapPin, Zap } from "lucide-react"
 import Link from "next/link"
 
 const reasons = [
-  "Home to 600+ Indian and global companies and the Japanese Industrial Township (JIT)",
-  "Excellent connectivity via KMP Expressway, NH-8, DFC, and IGI Airport",
-  "IGBC Platinum certified smart city with walk-to-work master planning",
-  "Plug-and-play industrial infrastructure with 24/7 power and water supply",
+  {
+    icon: Home,
+    label: "Home to 600+ Indian and global companies and the Japanese Industrial Township (JIT)",
+  },
+  {
+    icon: MapPin,
+    label: "Excellent connectivity via KMP Expressway, NH-8, DFC, and IGI Airport",
+  },
+  {
+    icon: Award,
+    label: "IGBC Platinum certified smart city with walk-to-work master planning",
+  },
+  {
+    icon: Zap,
+    label: "Plug-and-play industrial infrastructure with 24/7 power and water supply",
+  },
 ]
 
 export function WhyInvest() {
@@ -22,7 +34,7 @@ export function WhyInvest() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-white text-2xl sm:text-3xl tracking-wider font-light">
+          <h2 className="text-white text-2xl sm:text-3xl tracking-[0.22em] font-light">
             WHY INVEST IN MET?
           </h2>
         </motion.div>
@@ -44,23 +56,25 @@ export function WhyInvest() {
           </p>
         </motion.div>
 
-        {/* Reasons List */}
+        {/* Reasons Grid */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.2 }}
-          className="max-w-3xl mx-auto space-y-4 mb-12"
+          className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-4 mb-12"
         >
-          {reasons.map((reason, index) => (
+          {reasons.map(({ icon: Icon, label }, index) => (
             <motion.div
               key={index}
               whileHover={{ y: -4 }}
               transition={{ duration: 0.25, ease: "easeOut" }}
-              className="flex items-start gap-3 rounded-xl border border-white/10 bg-white/5 p-5"
+              className="flex flex-col items-center gap-4 rounded-xl border border-[#c9a962]/20 bg-transparent p-8 text-center"
             >
-              <Check className="w-5 h-5 text-[#c9a962] flex-shrink-0 mt-0.5" />
-              <p className="text-gray-300 text-sm">{reason}</p>
+              <div className="flex h-14 w-14 items-center justify-center rounded-full border border-[#c9a962]/20 bg-transparent text-[#c9a962]">
+                <Icon className="h-6 w-6" />
+              </div>
+              <p className="text-gray-300 text-sm leading-relaxed">{label}</p>
             </motion.div>
           ))}
         </motion.div>
@@ -75,10 +89,10 @@ export function WhyInvest() {
         >
           <Link
             href="#more"
-            className="inline-flex items-center gap-2 text-[#c9a962] text-sm tracking-wider hover:gap-4 transition-all group"
+            className="inline-flex items-center gap-2 text-[#c9a962] text-sm tracking-[0.2em] hover:gap-4 transition-all duration-300 group border-l border-r border-[#c9a962]/40 px-4 py-1"
           >
-            KNOW MORE
-            <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+            | KNOW MORE |
+            <ArrowRight className="w-4 h-4" />
           </Link>
         </motion.div>
       </div>
